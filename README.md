@@ -59,16 +59,23 @@ import ipdb; ipdb.set_trace()
 | l   | show where you are  |
 | q   | quit                |
 
+###ipython
+load a python file in ipython
+```python
+%run reference/data/fake_json_resp.py   # relative path
+```
+*This loads a file within this repo*
+
 ##Styleguide
 pep8
 
 ##Data Types and Variables
-|Type           |Mutability   |Common use case  |
-|:---           |:--          |:---             |
+|Type           |Mutability   |Common use case          |
+|:---           |:--          |:---                     |
 |Numbers        |immutable    ||
 |String         |immutable    ||
 |List *(Array)* |mutable      ||
-|Tuple          |immutable    ||
+|Tuple          |immutable    |temporary use, read only |
 |Dict *(Hash)*  |mutable      ||
 
 
