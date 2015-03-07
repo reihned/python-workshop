@@ -3,8 +3,15 @@
 > Learning and working with python
 
 
-###setup
-quick virtual environment
+##Setup
+###install
+```
+$ sudo apt-get install python-pip python-dev build-essential
+$ sudo pip install --upgrade pip
+$ sudo pip install --upgrade virtualenv
+```
+
+###quick virtual environment
 
 ```
 virtualenv [folder]
@@ -18,18 +25,18 @@ also
 pip install ipdb
 ```
 
-###ipdb
+##ipdb
 ```
 import ipdb; ipdb.set_trace()
 ```
 
-|commands |description          |
-|---------|---------------------|
-| n       | next                |
-| c       | continue            |
-| l       | show where you are  |
-| q       | quit                |
+|cmds |description          |
+|-----|---------------------|
+| n   | next                |
+| c   | continue            |
+| l   | show where you are  |
+| q   | quit                |
 
 
-###linters
+##linters
 pep8
