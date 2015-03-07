@@ -38,7 +38,7 @@ $ sudo pip install --upgrade virtualenv
 ```bash
 $ virtualenv [folder]
 $ cd [folder]
-$ bin/source
+$ source bin/activate
 ```
 
 also
