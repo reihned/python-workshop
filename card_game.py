@@ -54,12 +54,14 @@ class Game(object):
     def _log_result(self, result):
         self.rounds_played += 1
         if result == "player":
-            player_wins += 1
+            self.player_wins += 1
         elif result == "dealer":
-            dealer_wins += 1
+            self.dealer_wins += 1
         else:
             self.ties += 1
 
+    def _show_result(self):
+        print("{} games played, {} won by dealer, {} won by player, {} ties".format(self.rounds_played, self.dealer_wins, self.player_wins self.ties))
 
     def run(self):
         while True:
@@ -70,3 +72,4 @@ class Game(object):
             else:
                 # pass
                 break  # break out of an infinite loop
+        self._show_result
