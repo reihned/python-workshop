@@ -23,4 +23,50 @@ class Deck(object):
         if self.cards:  # [] == false
             return self.cards.pop(0)
 
-deck = Deck()
+        return None
+
+# deck = Deck()
+
+class Game(object):
+
+    def __init__(self):
+        self.deck = Deck()
+        self.rounds_played = 0
+        self.dealer_wins = 0
+        self.player_wins = 0
+        self.ties = 0
+
+    def play_round(self):
+        dealer_card = self.deck.draw_one_card()
+        player_card = self.deck.draw_one_card()
+
+        result = self._resolve_result(dealer_card, player_card)      # notice self is not passed in
+        return result
+
+    def _resolve_result(self, dealer_card, player_card):
+        result = "tie"                                      # give it a default value first, then change it to the real result
+        if int(dealer_card[1:]) > int(player_card[1:]):     # in this logic, clubs is weaker than diamonds
+            result = "dealer"
+        if int(dealer_card[1:]) < int(player_card[1:]):
+            result = "player"
+        return result
+
+    def _log_result(self, result):
+        self.rounds_played += 1
+        if result == "player":
+            player_wins += 1
+        elif result == "dealer":
+            dealer_wins += 1
+        else:
+            self.ties += 1
+
+
+    def run(self):
+        while True:
+            if self.deck.cards:
+                # pass
+                result = self.play_round()
+                self._log_result(result)
+            else:
+                # pass
+                break  # break out of an infinite loop
