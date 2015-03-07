@@ -64,12 +64,13 @@ pep8
 
 ##Data Types and Variables
 |Type           |Mutability   |Common use case  |
-|-              |-            |-                |
+|:---           |:--          |:---             |
 |Numbers        |immutable    ||
 |String         |immutable    ||
 |List *(Array)* |mutable      ||
 |Tuple          |immutable    ||
 |Dict *(Hash)*  |mutable      ||
+
 
 ####Mutability
 > http://en.wikipedia.org/wiki/Immutable_object  
