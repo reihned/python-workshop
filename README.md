@@ -89,9 +89,13 @@ a == b    # true
 a is b    # false
 ```
 
+##Import different files
+```python
+from references.data.more_data import stuff
+```
+
 ##Styleguide
 pep8
-
 
 ##Underscores in Python
 *convention*
