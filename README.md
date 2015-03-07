@@ -66,9 +66,6 @@ load a python file in ipython
 ```
 *This loads a file within this repo*
 
-##Styleguide
-pep8
-
 ##Data Types and Variables
 |Type           |Mutability   |Common use case          |
 |:---           |:--          |:---                     |
@@ -77,7 +74,6 @@ pep8
 |List *(Array)* |mutable      ||
 |Tuple          |immutable    |temporary use, read only |
 |Dict *(Hash)*  |mutable      ||
-
 
 ####Mutability
 > http://en.wikipedia.org/wiki/Immutable_object  
@@ -92,3 +88,21 @@ b = 1000
 a == b    # true
 a is b    # false
 ```
+
+##Styleguide
+pep8
+
+
+##Underscores in Python
+*convention*
+
+###_ as a name
+Throw-away name by convention
+Explicit indication for no use
+
+###_ prefix to a name
+Indicate internal use (vs public API)
+"Semi-convention"
+
+###__ prefix to a name
+No.
