@@ -20,6 +20,7 @@ class Deck(object):
         random.shuffle(self.cards)
 
     def draw_one_card(self):
-        return self.cards.pop(0)
+        if self.cards:  # [] == false
+            return self.cards.pop(0)
 
 deck = Deck()
